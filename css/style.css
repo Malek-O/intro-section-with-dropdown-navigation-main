@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.shds {
+    box-shadow: 0 0 19px rgba(48, 48, 48, 0.2);
+    border: none;
+}
+
+.h1 {
+    font-size: 5rem;
+}
+
+.med {
+    max-width: 75%;
+}
+
+.hov:hover {
+    background-color: transparent;
+    color: black;
+
+}
+
+@media screen and (max-width:768px) {
+    .med {
+        max-width: 100%;
+    }
+}

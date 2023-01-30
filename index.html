@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid mx-3 py-3">
+      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-2 mt-lg-0 ">
+
+            <li class="nav-item dropdown mx-2 ">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu shds w-50">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="me-2" src="images/icon-todo.svg" alt="">
+                    Todo list
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="me-2" src="images/icon-calendar.svg" alt="">
+                    Calander
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="me-2" src="images/icon-reminders.svg" alt="">
+                    Reminders
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <img class="me-2" src="images/icon-planning.svg" alt="">
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Careers
+              </a>
+              <ul class="dropdown-menu   shds">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    History
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Blog
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+          </ul>
+          <div class="d-flex gap-lg-5 gap-3 align-items-center justify-content-center
+          flex-lg-row flex-column" role="search">
+            <a href="#" class="text-decoration-none text-dark">Login</a>
+            <a href="#" class="btn btn-outline-dark px-4 rounded-pill w-100">Register</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="hero py-4 ">
+    <div class="container">
+      <div class="row justify-content-center align-items-center text-lg-start text-center">
+        <div class="col-lg-6 order-lg-1 order-2">
+          <h1 class="fw-bold py-5 h1 ">Make remote work</h1>
+          <p class="pb-5 mx-lg-0 mx-auto fs-5 text-black-50 med">Get your team in sync, no matter your location.
+            Streamline
+            processes,
+            create team rituals, and watch productivity soar.</p>
+          <button type="button" class="btn btn-dark px-4 py-2 mb-5 hov">Learn more</button>
+
+          <div class="d-flex gap-3  align-items-center flex-column flex-lg-row">
+            <a href="#">
+              <img src="images/client-databiz.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="images/client-audiophile.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="images/client-meet.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="images/client-maker.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-2 order-1">
+          <img class="img-fluid w-75 d-none d-lg-block" src="images/image-hero-desktop.png" alt="">
+          <img class="img-fluid   d-block d-lg-none" src="images/image-hero-mobile.png" alt="">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="attribution d-flex align-items-center justify-content-center py-3">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Malek-O">Malek-O</a>.
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
